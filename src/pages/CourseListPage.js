@@ -8,8 +8,8 @@ import searchBarStyles from "../components/SearchBar.module.css";
 import searchIcon from "../assets/search.svg";
 import { useSearchParams } from "react-router-dom";
 
-// path의 파라미터를 참조하는 hook은 useParams
-// query string을 가져오는 hook은 useSearchParams
+// path의 파라미터 useParams
+// query string은 useSearchParams
 function CourseListPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const initKeyword = searchParams.get("keyword");

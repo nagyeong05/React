@@ -1,15 +1,15 @@
-import classNames from 'classnames';
-import styles from './Button.module.css';
+import classNames from "classnames";
+import styles from "./Button.module.css";
 
 function Button({ variant, className, as, ...restProps }) {
-  if (as === 'div') {
+  if (as === "div") {
     return (
       <div
         {...restProps}
         className={classNames(
           styles.button,
           variant && styles[variant],
-          className,
+          className
         )}
       />
     );
@@ -21,7 +21,7 @@ function Button({ variant, className, as, ...restProps }) {
       className={classNames(
         styles.button,
         variant && styles[variant],
-        className,
+        className
       )}
     />
   );

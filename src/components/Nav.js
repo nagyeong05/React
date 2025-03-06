@@ -5,9 +5,9 @@ import styles from "./Nav.module.css";
 import { Link, NavLink } from "react-router-dom";
 
 const getLinkStyle = ({ isActive }) => {
-  // 현재 경로가 to에 써있는 경로와 같으면 true가 된다.
+  // 현재 경로가 to에 써있는 경로와 같으면 true
   return {
-    textDecoration: isActive ? "underline" : null,
+    textDecoration: isActive ? "underline" : undefined,
   };
 };
 
@@ -20,12 +20,12 @@ function Nav() {
         </Link>
         <ul className={styles.menu}>
           <li>
-            <NavLink to="courses" style={getLinkStyle}>
+            <NavLink to="/courses" style={getLinkStyle}>
               카탈로그
             </NavLink>
           </li>
           <li>
-            <NavLink to="questions" style={getLinkStyle}>
+            <NavLink to="/questions" style={getLinkStyle}>
               커뮤니티
             </NavLink>
           </li>
